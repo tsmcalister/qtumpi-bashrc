@@ -115,9 +115,9 @@ QVERSION="$(${QCLI} getinfo | jq -r '.version')"
 STAKINGSTATUS="$(${QCLI} getstakinginfo | jq -r '.staking')"
 NETWORKWEIGHT="$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
 STAKINGWEIGHT="$(${QCLI} getstakinginfo | jq -r '.weight')"
+WALLETBALANCE="$(${QCLI} getwalletinfo | jq -r '.balance')"
 QTUMDL="$(ps -ef | grep ./qtumd | wc -l)"
-if [ QTUMD > 1 ]
-  then
+if [ QTUMD > 1 ]; then
     QTUMDS="running"
 else
     QTUMDS="stopped"
@@ -157,6 +157,11 @@ echo "                    :ti,t..t;           .t: ii,ti               111111t,  
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
 tput setaf 1
-echo "Qtum deamon status: ${QTUMDS}"
-echo "Version:  ${QVERSION} Staking:    ${STAKINGSTATUS}"
-echo "Network weight:   ${NETWORKWEIGHT}    Your weight:    ${STAKINGWEIGHT}"
+echo -e "Qtum deamon:\t${QTUMDS}"
+echo -e "Version:\t${QVERSION}"
+echo -e "Staking:\t${STAKINGSTATUS}"
+if [ STAKINGSTATUS  == "true"]; then
+    echo -e "\tStaking weight:\t${STAKINGWEIGHT}"
+    echo -e "\tNetwork weight:\t${NETWORKWEIGHT}"
+fi
+echo "QTUM balance:\t${WALLETBALANCE}"
