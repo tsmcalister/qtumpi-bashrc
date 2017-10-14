@@ -156,12 +156,13 @@ echo "                 .t1. .t.   ;t.        ;t.   1;  ;f:            ;tt11ti   
 echo "                    :ti,t..t;           .t: ii,ti               111111t,   "
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
+echo ""
 tput setaf 1
 echo -e "Qtum deamon:\t${QTUMDS}"
 echo -e "Version:\t${QVERSION}"
 echo -e "Staking:\t${STAKINGSTATUS}"
-if [ STAKINGSTATUS  == "true"]; then
-    echo -e "\tStaking weight:\t${STAKINGWEIGHT}"
-    echo -e "\tNetwork weight:\t${NETWORKWEIGHT}"
+if [ STAKINGSTATUS  == "true" ]; then
+    echo -e "\tStaking weight:\t${STAKINGWEIGHT\100000000}"
+    echo -e "\tNetwork weight:\t${NETWORKWEIGHT\100000000}"
 fi
-echo "QTUM balance:\t${WALLETBALANCE}"
+echo -e "QTUM balance:\t${WALLETBALANCE}"
