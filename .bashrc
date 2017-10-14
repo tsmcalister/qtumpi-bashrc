@@ -117,7 +117,7 @@ NETWORKWEIGHT="$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
 STAKINGWEIGHT="$(${QCLI} getstakinginfo | jq -r '.weight')"
 WALLETBALANCE="$(${QCLI} getwalletinfo | jq -r '.balance')"
 QTUMDL="$(ps -ef | grep ./qtumd | wc -l)"
-if [ QTUMD > 1 ]; then
+if [ QTUMDL > 1 ]; then
     QTUMDS="running"
 else
     QTUMDS="stopped"
@@ -166,7 +166,7 @@ echo "                      |__|                 |_|    "
 
 echo ""
 tput setaf 1
-echo -e "                 Qtum deamon:\t\t${QTUMDS}"
+echo -e "                 QTUM deamon:\t\t${QTUMDS}"
 echo -e "                 Version:\t\t${QVERSION}"
 echo -e "                 Staking:\t\t${STAKINGSTATUS}"
 if [ "${STAKINGSTATUS}" = "true" ]; then
