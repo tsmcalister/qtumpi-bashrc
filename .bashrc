@@ -161,11 +161,11 @@ tput setaf 7
 echo "                    _____ _____ _____ _____     _ "
 echo "                   |     |_   _|  |  |     |___|_|"
 echo "                   |  |  | | | |  |  | | | | . | |"
-echo "                   |__  _| |_| |_____|_|_|_|  _|_|"
+echo "                   |__   | |_| |_____|_|_|_|  _|_|"
 echo "                      |__|                 |_|    "
 
 echo ""
-tput setaf 6
+tput setaf 1
 echo -e "                 Qtum deamon:\t\t${QTUMDS}"
 echo -e "                 Version:\t\t${QVERSION}"
 echo -e "                 Staking:\t\t${STAKINGSTATUS}"
