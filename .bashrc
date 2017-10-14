@@ -110,6 +110,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+QCLI="/home/pi/qtum-0.14.3/bin/qtum-cli"
+QVERSION="$(${QCLI} getinfo | jq -r '.version')"
+STAKINGSTATUS = "$(${QCLI} getstakinginfo | jq -r '.staking')"
+NETWORKWEIGHT = "$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
+STAKINGWEIGHT = "$(${QCLI} getstakinginfo | jq -r '.weight')"
 
 tput setaf 4
 echo ""                                            
@@ -144,4 +149,6 @@ echo "                 .t1. .t.   ;t.        ;t.   1;  ;f:            ;tt11ti   
 echo "                    :ti,t..t;           .t: ii,ti               111111t,   "
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
-echo "$(/home/pi/qtum-0.14.3/bin/qtum-cli getstakinginfo)"
+tput setaf 1
+echo "Version:\t${QVERSION}\tStaking:\t${STAKINGSTATUS}"
+echo "Network weight:\t${NETWORKWEIGHT}\tYour weight:\t${STAKINGWEIGHT}"
