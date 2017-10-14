@@ -150,5 +150,5 @@ echo "                    :ti,t..t;           .t: ii,ti               111111t,  
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
 tput setaf 1
-echo "Version:\t${QVERSION}\tStaking:\t${STAKINGSTATUS}"
-echo "Network weight:\t${NETWORKWEIGHT}\tYour weight:\t${STAKINGWEIGHT}"
+echo "Version:  ${QVERSION} Staking:    ${STAKINGSTATUS}"
+echo "Network weight:   ${NETWORKWEIGHT}    Your weight:    ${STAKINGWEIGHT}"
