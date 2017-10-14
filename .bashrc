@@ -144,4 +144,4 @@ echo "                 .t1. .t.   ;t.        ;t.   1;  ;f:            ;tt11ti   
 echo "                    :ti,t..t;           .t: ii,ti               111111t,   "
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
-echo "$(/home/pi/qtum-0.14.3/bin/qtum-cli getstakinginfo"
+echo "$(/home/pi/qtum-0.14.3/bin/qtum-cli getstakinginfo)"
