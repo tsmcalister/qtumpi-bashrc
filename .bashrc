@@ -124,7 +124,7 @@ else
 fi
 
 tput setaf 4
-echo ""                                            
+echo ""                                          
 echo "                        .:,               .:,                              "
 echo "                       it11t;;;;;;;;;;;;;1t11t.                            "
 echo "                      :t1tti             ,tttti.                           "
@@ -156,6 +156,13 @@ echo "                 .t1. .t.   ;t.        ;t.   1;  ;f:            ;tt11ti   
 echo "                    :ti,t..t;           .t: ii,ti               111111t,   "
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
+echo""
+echo "                   ____  ________  ____  ___      _ "
+echo "                  / __ \/_  __/ / / /  |/  /___  (_)"
+echo "                 / / / / / / / / / / /|_/ / __ \/ / "
+echo "                / /_/ / / / / /_/ / /  / / /_/ / /  "
+echo "                \___\_\/_/  \____/_/  /_/ .___/_/   "
+echo "                                       /_/          "
 echo ""
 tput setaf 1
 echo -e "Qtum deamon:\t${QTUMDS}"
