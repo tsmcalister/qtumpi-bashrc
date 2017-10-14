@@ -112,15 +112,15 @@ if ! shopt -oq posix; then
 fi
 QCLI="/home/pi/qtum-0.14.3/bin/qtum-cli"
 QVERSION="$(${QCLI} getinfo | jq -r '.version')"
-STAKINGSTATUS = "$(${QCLI} getstakinginfo | jq -r '.staking')"
-NETWORKWEIGHT = "$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
-STAKINGWEIGHT = "$(${QCLI} getstakinginfo | jq -r '.weight')"
+STAKINGSTATUS="$(${QCLI} getstakinginfo | jq -r '.staking')"
+NETWORKWEIGHT="$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
+STAKINGWEIGHT="$(${QCLI} getstakinginfo | jq -r '.weight')"
 QTUMDL="$(ps -ef | grep ./qtumd | wc -l)"
 if [ QTUMD > 1 ]
   then
-    QTUMDS = "running"
+    QTUMDS="running"
 else
-    QTUMDS = "stopped"
+    QTUMDS="stopped"
 fi
 
 tput setaf 4
