@@ -157,7 +157,7 @@ echo "                    :ti,t..t;           .t: ii,ti               111111t,  
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
 echo""
-tput setaf 5
+tput setaf 7
 echo "                    _____ _____ _____ _____     _ "
 echo "                   |     |_   _|  |  |     |___|_|"
 echo "                   |  |  | | | |  |  | | | | . | |"
