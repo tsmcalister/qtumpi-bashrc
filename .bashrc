@@ -162,7 +162,7 @@ echo -e "Qtum deamon:\t${QTUMDS}"
 echo -e "Version:\t${QVERSION}"
 echo -e "Staking:\t${STAKINGSTATUS}"
 if [ "${STAKINGSTATUS}" = "true" ]; then
-    echo -e "\tStaking weight:\t${STAKINGWEIGHT\100000000}"
-    echo -e "\tNetwork weight:\t${NETWORKWEIGHT\100000000}"
+    echo -e "\tStaking weight:\t${STAKINGWEIGHT}"
+    echo -e "\tNetwork weight:\t${NETWORKWEIGHT}"
 fi
 echo -e "QTUM balance:\t${WALLETBALANCE}"
