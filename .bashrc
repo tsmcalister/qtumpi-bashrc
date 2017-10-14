@@ -166,11 +166,11 @@ echo "                      |__|                 |_|    "
 
 echo ""
 tput setaf 1
-echo -e "                   Qtum deamon:\t${QTUMDS}"
-echo -e "                   Version:\t${QVERSION}"
-echo -e "                   Staking:\t${STAKINGSTATUS}"
+echo -e "                 Qtum deamon:\t\t${QTUMDS}"
+echo -e "                 Version:\t\t${QVERSION}"
+echo -e "                 Staking:\t\t${STAKINGSTATUS}"
 if [ "${STAKINGSTATUS}" = "true" ]; then
-    echo -e "                   Staking weight:\t${STAKINGWEIGHT}"
-    echo -e "                   Network weight:\t${NETWORKWEIGHT}"
+    echo -e "                 Staking weight:\t${STAKINGWEIGHT}"
+    echo -e "                 Network weight:\t${NETWORKWEIGHT}"
 fi
-echo -e "                   QTUM balance:\t${WALLETBALANCE}"
+echo -e "                 QTUM balance:\t${WALLETBALANCE}"
