@@ -173,4 +173,4 @@ if [ "${STAKINGSTATUS}" = "true" ]; then
     echo -e "                 Staking weight:\t${STAKINGWEIGHT}"
     echo -e "                 Network weight:\t${NETWORKWEIGHT}"
 fi
-echo -e "                 QTUM balance:\t${WALLETBALANCE}"
+echo -e "                 QTUM balance:\t\t${WALLETBALANCE}"
