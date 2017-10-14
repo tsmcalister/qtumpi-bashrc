@@ -157,7 +157,7 @@ echo "                    :ti,t..t;           .t: ii,ti               111111t,  
 echo "                       it111.............;t11t.                 .t111ti    "
 echo "                       :t1t1             :t1t1                     .       "
 echo""
-tput setaf 7
+tput setaf 1
 echo "                    _____ _____ _____ _____     _ "
 echo "                   |     |_   _|  |  |     |___|_|"
 echo "                   |  |  | | | |  |  | | | | . | |"
@@ -165,7 +165,7 @@ echo "                   |__  _| |_| |_____|_|_|_|  _|_|"
 echo "                      |__|                 |_|    "
 
 echo ""
-tput setaf 1
+tput setaf 3
 echo -e "                 Qtum deamon:\t\t${QTUMDS}"
 echo -e "                 Version:\t\t${QVERSION}"
 echo -e "                 Staking:\t\t${STAKINGSTATUS}"
@@ -174,3 +174,4 @@ if [ "${STAKINGSTATUS}" = "true" ]; then
     echo -e "                 Network weight:\t${NETWORKWEIGHT}"
 fi
 echo -e "                 QTUM balance:\t\t${WALLETBALANCE}"
+echo ""
