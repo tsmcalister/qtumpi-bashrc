@@ -117,7 +117,7 @@ NETWORKWEIGHT="$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
 STAKINGWEIGHT="$(${QCLI} getstakinginfo | jq -r '.weight')"
 WALLETBALANCE="$(${QCLI} getwalletinfo | jq -r '.balance')"
 QTUMDL="$(ps -ef | grep ./qtumd | wc -l)"
-if [ QTUMDL = "2" ]; then
+if [ "${QTUMDL}" = "2" ]; then
     QTUMDS="running"
 else
     QTUMDS="stopped"
