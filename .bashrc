@@ -165,7 +165,7 @@ echo "                   |__  _| |_| |_____|_|_|_|  _|_|"
 echo "                      |__|                 |_|    "
 
 echo ""
-tput setaf 7
+tput setaf 6
 echo -e "                 Qtum deamon:\t\t${QTUMDS}"
 echo -e "                 Version:\t\t${QVERSION}"
 echo -e "                 Staking:\t\t${STAKINGSTATUS}"
