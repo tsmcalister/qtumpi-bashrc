@@ -7,7 +7,7 @@ It is a work in progress and more features will be added over time.
 
 
 # Installation
-Make sure you are in your home directory
+Make sure you are in your home directory and then run the following commands:
 1) `sudo apt-get update`
 2) `yes | sudo apt-get install git jq`
 3) `git clone https://github.com/tsmcalister/qtumpi-bashrc.git`
