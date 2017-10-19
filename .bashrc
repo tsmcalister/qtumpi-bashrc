@@ -110,7 +110,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-QCLI="~/qtum-wallet/bin/qtum-cli"
+QCLI="/home/$USER/qtum-0.14.3/bin/qtum-cli"
 QVERSION="$(${QCLI} getinfo | jq -r '.version')"
 STAKINGSTATUS="$(${QCLI} getstakinginfo | jq -r '.staking')"
 NETWORKWEIGHT="$(${QCLI} getstakinginfo | jq -r '.netstakeweight')"
